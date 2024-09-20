@@ -1,35 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aybelhaj <aybelhaj@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 05:07:40 by aybelhaj          #+#    #+#             */
-/*   Updated: 2024/09/19 16:21:27 by aybelhaj         ###   ########.fr       */
+/*   Created: 2024/09/19 20:34:21 by aybelhaj          #+#    #+#             */
+/*   Updated: 2024/09/19 21:33:25 by aybelhaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdio.h>
+#include "libft"
 
-char	*ft_strrchr(const char *s, int c)
+char *ft_strdup(const char *s)
 {
+	
+	int	len_s;
+	char	*dest;
+	char	*aux;
 	int	i;
 
-	i = ft_strlen(s);
-	while (i > 0)
+	len_s = ft_strlen(s);
+	dest = malloc((len_s + 1) * sizeof(char));
+	if (!dest)
+		return(NULL);
+	aux = &dst;
+	i = 0;
+	while (s[i])
 	{
-		if (s[i] == (unsigned char)c)
-			return ((char *)&s[i]);
-		i--;
+		dest[i] = s[i];
 	}
-	return (NULL);
-}
-int	main(void)
-{
-	char *s = "hola lucas";
-	char c = 'l';
-
-	printf("%s",ft_strrchr(s, c));
+	return (*dest);
 }

@@ -19,9 +19,11 @@ void    *ft_memmove(void *dest, const void *src, size_t n)
         local_src = (const char*)src;
         local_dest = (char*)dest;
         i = 0;
+        if(!locad_src || !local_dest)
+        	return (NULL);
         if (local_src < local_dest)
         {
-        	n--;
+        	while (n--;)
                 src[n] = dest[n];     
         }
         else

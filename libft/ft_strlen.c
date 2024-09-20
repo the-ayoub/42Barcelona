@@ -6,12 +6,12 @@
 /*   By: aybelhaj <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/12 01:29:53 by aybelhaj          #+#    #+#             */
-/*   Updated: 2024/09/12 04:27:05 by aybelhaj         ###   ########.fr       */
+/*   Updated: 2024/09/19 13:40:09 by aybelhaj         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-size_t	strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	size_t	counter;
 
